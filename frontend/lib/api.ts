@@ -3,9 +3,8 @@
  * Reads JWT from localStorage, handles token refresh automatically.
  */
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL
-  ? process.env.NEXT_PUBLIC_API_URL
-  : "/api/v1";
+// Always use relative path — Next.js rewrites proxy /api/v1/* to the backend.
+const API_BASE = "/api/v1";
 
 // ─── Token management ─────────────────────────────────────────────────────────
 
