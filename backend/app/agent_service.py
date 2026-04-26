@@ -137,7 +137,7 @@ async def stream_message(
 
     try:
         # ── Stream-first ──────────────────────────────────────────────────────
-        with client.beta.sessions.stream(session_id=session_id) as stream:
+        with client.beta.sessions.events.stream(session_id=session_id) as stream:
             # Send the user message (stream is already open and buffering)
             client.beta.sessions.events.send(
                 session_id=session_id,
