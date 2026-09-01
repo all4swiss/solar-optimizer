@@ -1,6 +1,8 @@
 # Environment
 .env
 *.env.local
+.env.*
+!.env.example
 
 # Python
 __pycache__/
@@ -24,7 +26,6 @@ npm-debug.log*
 .vscode/
 .idea/
 *.swp
-*.swo
 
 # OS
 .DS_Store
